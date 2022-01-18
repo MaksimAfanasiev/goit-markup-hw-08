@@ -1,5 +1,26 @@
+.projects-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+}
+
+.projects-list__item {
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+}
+
 .projects-list__item:not(:last-child) {
   margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .project-card {
@@ -12,6 +33,12 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 }
+
+// .project-card:first-child {
+//   @media screen and (min-width: 768px) and (max-width: 1199px) {
+//     height: ;
+//   }
+// }
 
 .project-card__content {
   position: relative;

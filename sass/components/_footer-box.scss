@@ -4,6 +4,15 @@
 
 .footer-content {
   text-align: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    padding: 0 80px;
+  }
+}
+
+.footer-contacts {
 }
 
 .adress-section {

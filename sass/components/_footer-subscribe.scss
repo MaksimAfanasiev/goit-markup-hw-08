@@ -1,5 +1,9 @@
 .join-box {
   margin-top: 60px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    margin-left: auto;
+  }
 }
 
 .join-box__word {
@@ -14,6 +18,11 @@
 
 .subscribe-form {
   margin-top: 60px;
+  @media screen and (min-width: 768px) {
+    min-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .subscribe-form__label {
