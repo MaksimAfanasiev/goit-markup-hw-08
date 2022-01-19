@@ -1,0 +1,26 @@
+.logo {
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: $theme-color;
+  margin-right: 93px;
+}
+
+.logo__word {
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: $theme-color;
+}
+
+.logo__word--header {
+  color: #000;
+}
+
+.logo__word--footer {
+  color: #fff;
+}

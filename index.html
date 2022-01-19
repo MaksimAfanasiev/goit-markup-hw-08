@@ -194,7 +194,7 @@
         </div>
       </section>
       <!-- Направления деятельности -->
-      <section class="activities-box section">
+      <section class="activities-box">
         <div class="container">
           <h2 class="activities-box__title">Чем мы занимаемся</h2>
           <ul class="activities-list">
@@ -559,79 +559,85 @@
       </section>
     </main>
     <!-- Модальное окно -->
-    <div class="container backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button class="modal__close-button" data-modal-close>
-          <svg width="18px" height="18px" class="modal__button-icon">
-            <use href="images/symbol-defs.svg#icon-close-black"></use>
-          </svg>
-        </button>
-        <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
-        <form name="feedback">
-          <label class="form-label">
-            <span class="form-label__name">Имя</span>
-            <span class="form-label__input-box">
-              <input
-                type="text"
-                name="username"
-                class="form-label__input-item"
-              />
-              <svg width="18px" height="18px" class="form-label__input-icon">
-                <use href="images/symbol-defs.svg#icon-person"></use>
-              </svg>
-            </span>
-          </label>
-          <label class="form-label">
-            <span class="form-label__name">Телефон</span>
-            <span class="form-label__input-box">
-              <input
-                type="tel"
-                name="phone-number"
-                class="form-label__input-item"
-              />
-              <svg width="18px" height="18px" class="form-label__input-icon">
-                <use href="images/symbol-defs.svg#icon-phone"></use>
-              </svg>
-            </span>
-          </label>
-          <label class="form-label">
-            <span class="form-label__name">Почта</span>
-            <span class="form-label__input-box">
-              <input type="email" name="email" class="form-label__input-item" />
-              <svg width="18px" height="18px" class="form-label__input-icon">
-                <use href="images/symbol-defs.svg#icon-email"></use>
-              </svg>
-            </span>
-          </label>
-          <label class="form-label">
-            <span class="form-label__name">Комментарий</span>
-            <textarea
-              name="comments"
-              placeholder="Введите текст"
-              class="form-label__textarea-item"
-            ></textarea>
-          </label>
-          <label class="form-check">
-            <input
-              type="checkbox"
-              name="agreement"
-              class="form-check__input-item"
-            />
-            <svg width="16px" height="15px" class="form-check__input-icon">
-              <use href="images/symbol-defs.svg#icon-checked"></use>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="container">
+        <div class="modal">
+          <button class="modal__close-button" data-modal-close>
+            <svg width="18px" height="18px" class="modal__button-icon">
+              <use href="images/symbol-defs.svg#icon-close-black"></use>
             </svg>
-            <span class="form-check__text">
-              Соглашаюсь с рассылкой и принимаю
-              <a href="" class="form-check__link">Условия договора</a>
-            </span>
-          </label>
-          <button type="submit" class="form-button">Отправить</button>
-        </form>
+          </button>
+          <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
+          <form name="feedback">
+            <label class="form-label">
+              <span class="form-label__name">Имя</span>
+              <span class="form-label__input-box">
+                <input
+                  type="text"
+                  name="username"
+                  class="form-label__input-item"
+                />
+                <svg width="18px" height="18px" class="form-label__input-icon">
+                  <use href="images/symbol-defs.svg#icon-person"></use>
+                </svg>
+              </span>
+            </label>
+            <label class="form-label">
+              <span class="form-label__name">Телефон</span>
+              <span class="form-label__input-box">
+                <input
+                  type="tel"
+                  name="phone-number"
+                  class="form-label__input-item"
+                />
+                <svg width="18px" height="18px" class="form-label__input-icon">
+                  <use href="images/symbol-defs.svg#icon-phone"></use>
+                </svg>
+              </span>
+            </label>
+            <label class="form-label">
+              <span class="form-label__name">Почта</span>
+              <span class="form-label__input-box">
+                <input
+                  type="email"
+                  name="email"
+                  class="form-label__input-item"
+                />
+                <svg width="18px" height="18px" class="form-label__input-icon">
+                  <use href="images/symbol-defs.svg#icon-email"></use>
+                </svg>
+              </span>
+            </label>
+            <label class="form-label">
+              <span class="form-label__name">Комментарий</span>
+              <textarea
+                name="comments"
+                placeholder="Введите текст"
+                class="form-label__textarea-item"
+              ></textarea>
+            </label>
+            <label class="form-check">
+              <input
+                type="checkbox"
+                name="agreement"
+                class="form-check__input-item"
+              />
+              <svg width="16px" height="15px" class="form-check__input-icon">
+                <use href="images/symbol-defs.svg#icon-checked"></use>
+              </svg>
+              <span class="form-check__text">
+                Соглашаюсь с рассылкой и принимаю
+                <a href="" class="form-check__link">Условия договора</a>
+              </span>
+            </label>
+            <button type="submit" class="form-button">Отправить</button>
+          </form>
+        </div>
       </div>
     </div>
     <!-- Подвал -->
     <footer class="footer-box section">
-      <div class="container footer-content">
+      <div class="container">
         <div class="footer-contacts">
           <a href="" class="logo">
             Web<span class="logo__word logo__word--footer">Studio</span></a
