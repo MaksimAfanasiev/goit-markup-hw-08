@@ -1451,6 +1451,13 @@ address {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .projects-list__item {
+    -ms-flex-preferred-size: calc(100% / 3 - 30px);
+        flex-basis: calc(100% / 3 - 30px);
+  }
+}
+
 .projects-list__item:not(:last-child) {
   margin-bottom: 30px;
 }
