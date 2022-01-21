@@ -28,6 +28,7 @@
   height: 100%;
   padding: 48px 8vw;
   background-color: #fff;
+  overflow-y: scroll;
 
   &.is-open {
     display: flex;
