@@ -17,7 +17,7 @@
 }
 
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   z-index: 2;
   display: none;
   flex-direction: column;
@@ -26,7 +26,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 48px 40px;
+  padding: 48px 8vw;
   background-color: #fff;
 
   &.is-open {
@@ -57,7 +57,7 @@
 .mobile-menu__link {
   font-family: $primary-font;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 8vw;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: $text-primary;
@@ -66,6 +66,10 @@
   &:focus {
     color: $theme-color;
   }
+}
+
+.mobile-menu__link--active {
+  color: $theme-color;
 }
 
 .mobile-menu-contacts {
@@ -80,7 +84,7 @@
   font-family: $text-primary;
   font-style: normal;
   font-weight: 500;
-  font-size: 34px;
+  font-size: 7vw;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: $theme-color;
@@ -90,7 +94,7 @@
   font-family: $text-primary;
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 5vw;
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: $text-secondary;
@@ -116,7 +120,7 @@
   font-family: $text-primary;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 4vw;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: $theme-color;
